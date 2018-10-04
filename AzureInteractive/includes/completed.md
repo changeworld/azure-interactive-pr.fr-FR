@@ -2,23 +2,23 @@
 title: Fichier Include
 description: Fichier Include
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/25/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 1c4aaf7afd9fbc54dd34c2cca13a8b74e947c16a
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: a66fcc3a406c79fcf9881ddaaaf8330f5b373043
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079247"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47459993"
 ---
 Vous avez réussi à créer une application serverless complète à l’aide des services Azure.
 
-## <a name="clean-up-resources"></a>Supprimer les ressources
+## <a name="clean-up-resources"></a>Supprimer des ressources
 
 Lorsque vous aurez terminé votre travail avec cette application, vous pourrez utiliser la commande suivante pour supprimer toutes les ressources créées dans le cadre du didacticiel :
 

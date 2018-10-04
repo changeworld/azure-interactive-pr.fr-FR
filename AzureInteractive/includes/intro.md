@@ -2,19 +2,19 @@
 title: Fichier Include
 description: Fichier Include
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: d651fd3d03f2678d625e60f9ab1e9f59e623964f
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 0f86f2698a3a0c1e20272c335b63faf03b4b92d6
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079236"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460022"
 ---
 Dans ce didacticiel, vous déployez une application web simple qui présente une interface utilisateur HTML. Un backend serverless permet à l’application de charger des images et d’obtenir automatiquement des légendes qui les décrivent.
 
@@ -32,9 +32,9 @@ Le schéma suivant illustre les services Azure utilisés par l’application :
 
 Ce tutoriel vous montre comment effectuer les opérations suivantes :
 > [!div class="checklist"]
-> * Configurer le Stockage Blob Azure pour héberger un site web statique et des images chargées.
-> * Charger des images vers le Stockage Blob Azure à l’aide d’Azure Functions.
-> * Redimensionner des images à l’aide d’Azure Functions.
-> * Stocker des métadonnées d’image dans Azure Cosmos DB.
-> * Utiliser l’API Vision Cognitive Services pour générer automatiquement des légendes d’image.
+> * Configurer le Stockage Blob Azure pour héberger un site web statique et des images chargées
+> * Charger des images vers le Stockage Blob Azure à l’aide d’Azure Functions
+> * Redimensionner des images à l’aide d’Azure Functions
+> * Stocker des métadonnées d’image dans Azure Cosmos DB
+> * Utiliser l’API Vision de Cognitive Services pour générer automatiquement des légendes d’image
 > * Utiliser Azure Active Directory pour sécuriser l’application web en authentifiant les utilisateurs.
