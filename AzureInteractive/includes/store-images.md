@@ -2,19 +2,19 @@
 title: Fichier Include
 description: Fichier Include
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 2202cdebe77668972372983a0e802d00edabf6dd
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 194a25dbf9abda80379aa5aab408ac4ffe9ab7f5
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079241"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460056"
 ---
 Azure Cosmos DB est une base de données serverless multi-modèles distribuée par Microsoft au niveau mondial. Dans ce module, vous allez apprendre à utiliser Azure Functions pour stocker et récupérer des métadonnées d’image sous forme de documents JSON dans Cosmos DB.
 
@@ -113,7 +113,7 @@ La liaison de sortie Cosmos DB vous permet de créer des documents dans une coll
 
 ## <a name="create-a-function-to-list-images-from-cosmos-db"></a>Créer une fonction pour répertorier les images issues de Cosmos DB
 
-L’application web requiert une API pour récupérer les métadonnées d’image à partir de Cosmos DB. Dans les étapes qui suivent, vous allez créer une fonction déclenchée par HTTP qui utilise une liaison d’entrée Cosmos DB pour interroger la collection de la base de données.
+L’application web requiert une API pour récupérer les métadonnées d’image à partir de Cosmos DB. Dans les étapes qui suivent, vous allez créer une fonction de déclencheur HTTP qui utilise une liaison d’entrée Cosmos DB pour interroger la collection de la base de données.
 
 1. Dans votre application de fonction, pointez sur **Fonctions** sur la gauche, puis cliquez sur **+** pour créer une fonction.
 
