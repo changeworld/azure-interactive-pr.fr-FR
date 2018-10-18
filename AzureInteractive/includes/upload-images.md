@@ -6,15 +6,15 @@ author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
-ms.date: 06/21/2018
+ms.date: 10/12/2018
 ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 51c7d3e64424d499b473f3b138ce249a9cfd0182
-ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
+ms.openlocfilehash: 3779c2e130afa7ee8d5879f30a924e258b7a41e9
+ms.sourcegitcommit: fdb43556b8dcf67cb39c18e532b5fab7ac53eaee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47460079"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49315974"
 ---
 L’application que vous générez est une galerie de photos. Elle utilise du code JavaScript côté client pour appeler des API afin de charger et d’afficher des images. Dans ce module, vous allez créer une API à l’aide d’une fonction serverless qui génère une URL limitée dans le temps pour charger une image. L’application web utilise l’URL générée pour charger une image dans le stockage d’objets blob à l’aide de [l’API REST Stockage Blob](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api).
 
@@ -44,12 +44,12 @@ az functionapp create -n <function app name> -g first-serverless-app -s <storage
 
 ## <a name="configure-the-function-app"></a>Configurer l’application de fonction
 
-L’application de fonction dans ce didacticiel requiert la version 1.x du runtime Functions. Définir le paramètre d’application `FUNCTIONS_WORKER_RUNTIME` sur `~1` épingle l’application de fonction à la dernière version 1.x. Configurez les paramètres d’application à l’aide de la commande [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set).
+L’application de fonction dans ce didacticiel requiert la version 1.x du runtime Functions. Définir le paramètre d’application `FUNCTIONS_EXTENSION_VERSION` sur `~1` épingle l’application de fonction à la dernière version 1.x. Configurez les paramètres d’application à l’aide de la commande [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set).
 
 Dans la commande Azure CLI suivante, « <app_name> » est le nom de votre application de fonction.
 
 ```azurecli
-az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_WORKER_RUNTIME=~1
+az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
 ```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>Créer une fonction serverless déclenchée par HTTP
@@ -90,7 +90,7 @@ L’application web de galerie de photos adresse une requête HTTP à une foncti
 
     1. (JavaScript) Cliquez sur **Console** pour faire apparaître une fenêtre de console.
 
-        ![Ouvrir z une fenêtre de console](media/functions-first-serverless-web-app/2-open-console.jpg)
+        ![Ouvrir une fenêtre de console](media/functions-first-serverless-web-app/2-open-console.jpg)
 
     1. (JavaScript) Vérifiez que le répertoire actif est **d:\home\site\wwwroot** en exécutant la commande `cd d:\home\site\wwwroot`.
 
