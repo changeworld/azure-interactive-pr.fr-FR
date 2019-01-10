@@ -49,7 +49,7 @@ L’application de fonction dans ce didacticiel requiert la version 1.x du runti
 Dans la commande Azure CLI suivante, « <app_name> » est le nom de votre application de fonction.
 
 ```azurecli
-az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
+az functionapp config appsettings set --name <function app name> -g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
 ```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>Créer une fonction serverless déclenchée par HTTP
